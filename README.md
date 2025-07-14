@@ -61,7 +61,6 @@ prime-video-devsecops-eks/
 ├── Jenkinsfile            # Jenkins pipeline
 ├── sonar-project.properties # SonarQube
 ├── .trivyignore           # Trivy config
-├── .scout.yml             # Scout config (mock)
 ├── README.md              
 ```
 
