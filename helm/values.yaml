@@ -1,0 +1,11 @@
+replicaCount: 2
+image:
+  repository: yourdockerhub/prime-video-clone
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: LoadBalancer
+  port: 80
+
+resources: {}

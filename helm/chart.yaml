@@ -1,0 +1,4 @@
+apiVersion: v2
+name: prime-video-clone
+description: A Helm chart for deploying Prime Video Clone on Kubernetes
+version: 0.1.0

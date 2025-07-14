@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prime-video-clone
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: prime-video-clone
+  template:
+    metadata:
+      labels:
+        app: prime-video-clone
+    spec:
+      containers:
+        - name: prime-video-clone
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          ports:
+            - containerPort: 3000
